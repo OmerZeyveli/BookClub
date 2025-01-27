@@ -25,7 +25,7 @@ public class SignUp : MonoBehaviour
     private void Start()
     {
         // Initialize DynamoDB client
-        var credentials = new BasicAWSCredentials("AKIA4VDBMGBDPKBZ3PHN", "4G7g0X9TCDj+PSvH5M3ocTu7pcje0ceZsXacxnEJ");
+        var credentials = new BasicAWSCredentials("AWS DATABASE KEYS", "AWS DATABASE KEYS");
         client = new AmazonDynamoDBClient(credentials, Amazon.RegionEndpoint.EUNorth1);
 
         menu = this.GetComponent<MainMenu>();
