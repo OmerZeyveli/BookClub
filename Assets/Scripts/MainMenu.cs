@@ -40,7 +40,17 @@ public class MainMenu : MonoBehaviour
         yield return new WaitForSeconds(3f);
         HidePanel(3);
     }
+
+    public void openPnPPage()
+    {
+        Application.OpenURL("https://github.com/OmerZeyveli/BookClub/blob/main/Privacy%26Policy.md");
+    }
     
+    public void openCreditsPage()
+    {
+        Application.OpenURL("https://github.com/OmerZeyveli/BookClub/tree/main?tab=readme-ov-file#credits");
+    }
+
 
     void HidePanels()
     {
