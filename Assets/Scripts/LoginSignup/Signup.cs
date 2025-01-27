@@ -72,7 +72,7 @@ public class SignUp : MonoBehaviour
         }
 
         // Hash the password with MD5 and a salt
-        string salt = "tuz1!";
+        string salt = "YOUR SALT";
         string hashedPassword = HashingUtility.GetMD5(salt + password);;
 
         // Create user in DynamoDB

@@ -30,6 +30,7 @@ public class MainMenu : MonoBehaviour
         ShowPanel(2);
     }
 
+    // Error pop up panel will stand for 3 seconds.
     public IEnumerator ShowErrorPanel(string newErrorMessage)
     {
         ShowPanel(3);
@@ -41,6 +42,7 @@ public class MainMenu : MonoBehaviour
         HidePanel(3);
     }
 
+    // Web pages.
     public void openPnPPage()
     {
         Application.OpenURL("https://github.com/OmerZeyveli/BookClub/blob/main/Privacy%26Policy.md");
@@ -52,6 +54,7 @@ public class MainMenu : MonoBehaviour
     }
 
 
+    // Hides
     void HidePanels()
     {
         for (int i = 0; i < canvasGroups.Length; i++)

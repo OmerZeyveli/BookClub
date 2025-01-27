@@ -28,7 +28,7 @@ public class Login : MonoBehaviour
     private void Start()
     {
         // Initialize DynamoDB client.
-        var credentials = new BasicAWSCredentials("AKIA4VDBMGBDPKBZ3PHN", "4G7g0X9TCDj+PSvH5M3ocTu7pcje0ceZsXacxnEJ");
+        var credentials = new BasicAWSCredentials("AWS DATABASE KEYS", "AWS DATABASE KEYS");
         client = new AmazonDynamoDBClient(credentials, RegionEndpoint.EUNorth1); // Change region as needed
 
         menu = this.GetComponent<MainMenu>();
@@ -68,7 +68,7 @@ public class Login : MonoBehaviour
 
         // Use MD5 encryiption with salt.
         // Salt is used for rainbow table attacks.
-        string salt = "tuz1!";
+        string salt = "YOUR SALT";
         password = HashingUtility.GetMD5(salt + password);
 
         // Exception handling incase of database problems.

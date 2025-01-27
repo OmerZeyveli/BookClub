@@ -32,7 +32,7 @@ public class Monthly : MonoBehaviour
         userID = SaveSystem.LoadEmail();
 
         // Initialize DynamoDB client.
-        var credentials = new BasicAWSCredentials("AKIA4VDBMGBDPKBZ3PHN", "4G7g0X9TCDj+PSvH5M3ocTu7pcje0ceZsXacxnEJ");
+        var credentials = new BasicAWSCredentials("AWS DATABASE KEYS", "AWS DATABASE KEYS");
         client = new AmazonDynamoDBClient(credentials, RegionEndpoint.EUNorth1);
 
         await LoadMonthlyBooks();
